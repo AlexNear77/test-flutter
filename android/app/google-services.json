@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "774021910497",
+    "project_id": "alex-app-ebe42",
+    "storage_bucket": "alex-app-ebe42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774021910497:android:568dc6683c657f7bfbcca0",
+        "android_client_info": {
+          "package_name": "com.example.actvidad_personal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774021910497-belk6jfc8pdjcscjripjs39pfk56hk65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.actvidad_personal",
+            "certificate_hash": "52c4bc1bd103281f81576f93b9206d378d332fb9"
+          }
+        },
+        {
+          "client_id": "774021910497-l6661rvm24eqpqah8t7ug2alkmiaglik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVQQXqip0RVWbYv4ycZuhiEzBU7OQN_nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774021910497-0bk9r0shqqv59jd3mchvtdftgn48b16f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

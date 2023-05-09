@@ -1,4 +1,5 @@
 import 'package:actvidad_personal/pages/second-route.dart';
+import 'package:actvidad_personal/services/firebase_service.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,11 +11,17 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: MyWidget(),
-        ),
+        body: FutureBuilder(
+            future: FirebaseService.firebaseInit(),
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.done) {
+                return MyWidget();
+              } else {
+                return const CircularProgressIndicator();
+              }
+            }),
       ),
     );
   }
@@ -59,13 +66,7 @@ class MyWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ElevatedButton(
-              onPressed: () => {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const SecondRoute(),
-                        ))
-                  },
+              onPressed: () async => {await FirebaseService.signInGoggle()},
               child: Text("Iniciar con Google!")),
           ElevatedButton(
               onPressed: () => {

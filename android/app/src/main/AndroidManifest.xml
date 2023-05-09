@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.actvidad_personal">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- GPS AQUI -->
+    <!-- android:usesCleartextTraffic="true" // Agregarki debajo de aplication   -->
     <application
         android:label="actvidad_personal"
         android:name="${applicationName}"
